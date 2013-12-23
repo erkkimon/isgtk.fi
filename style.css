@@ -137,7 +137,7 @@ b {
   font-family: "lin-libertine-bold-italic";
 }
 
-a, a:hover {
+a {
   font-family: "lin-libertine-italic";
   border-bottom: 1px dashed rgba(0,0,0,0);
   text-decoration: none;
@@ -146,11 +146,13 @@ a, a:hover {
 }
 
 a:hover {
-  border-bottom: 1px dashed #000;
+  border-bottom: 1px dotted #000;
 }
 
 .active-link {
-  font-family: "lin-libertine-bold-italic";
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  cursor: default;
 }
 
 /* CLASSES */
@@ -167,12 +169,40 @@ a:hover {
 .icon {
   padding: 7px;
   height: 60px;
-  border: 1px dashed rgba(0,0,0,0);
+  border: 1px dotted rgba(0,0,0,0);
   margin: 10px;
 }
 
 .icon:hover {
   border: 1px dotted #000;
+}
+
+/* INSTRUCTIONS */
+
+#instr-logo {
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  width: 20%;
+  display: none;
+}
+
+#instr-join {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -400px;
+  width: 200px;
+  display: none;
+}
+
+#instr-shirt {
+  position: fixed;
+  bottom: 50px;
+  right: 50%;
+  margin-right: -400px;
+  width: 200px;
+  display: none;
 }
 
 /* AD HOC STYLES */

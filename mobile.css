@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   #logo {
     width: 70%;
     padding: 15%;
@@ -9,11 +9,15 @@
     padding: 10%;
     padding-top: 20px;
   }
-}
-
-@media screen and (max-width: 500px) {
   .icon {
     width: 10%;
     height: auto;
+    margin: 2%;
+  }
+  #instr-logo {
+    display: none;
+  }
+  .instr {
+    display: hidden;
   }
 }

@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <link href="style.css" type="text/css" rel="stylesheet" />
   <link href="mobile.css" type="text/css" rel="stylesheet" />
   <title>#ISGTK ry &ndash; I Support Guggenheim to Kouvola</title>
@@ -193,19 +193,22 @@
     </div>
   </div>
   <div id="footer">
-    <a href="" target="">
-      <img src="img/icon_liity.png" class="icon" />
+    <a href="https://docs.google.com/forms/d/1uCAZODKaf1Et9dYj5wh4ksAZhbUvzhc_QOF_Xjh9qOg/viewform" target="_ry">
+      <img src="img/icon_liity.png" class="icon" id="join" />
     </a>
-    <a href="" target="">
+    <a href="https://www.facebook.com/GuggenheimKouvolaan?fref=ts" target="_fb">
       <img src="img/icon_fb.png" class="icon" />
     </a>
-    <a href="" target="">
+    <a href="https://twitter.com/GuggenheimKVL" target="_tw">
       <img src="img/icon_twitter.png" class="icon" />
     </a>
-    <a href="" target="">
-      <img src="img/icon_paita.png" class="icon" />
+    <a href="https://holvi.com/shop/guggis/" target="_ho">
+      <img src="img/icon_paita.png" class="icon" id="shirt" />
     </a>
   </div>
+  <img id="instr-logo" class="instr" src="img/instr_logo.png" />
+  <img id="instr-join" class="instr" src="img/instr_join.png" />
+  <img id="instr-shirt" class="instr" src="img/instr_shirt.png" />
 </body>
 
 <script type="text/javascript">
@@ -227,21 +230,43 @@
 	function loadContent(toBeShown, toBeHidden)
 	{
     $("#"+toBeHidden).slideUp(500);
-    $("#"+toBeShown).slideUp(500).slideDown(500);
+    $("#"+toBeShown).slideDown(500);
     $('html, body').animate(
 		{
     	scrollTop: $(".hr").offset().top
     }, 300);
+    $("#"+toBeShown+"-link").attr("class", "active-link");
+    $("#"+toBeHidden+"-link").attr("class", "");
 		return false;
 	}
   $(document).ready(function()
   { 
     $("#top, #yhdistysasiat").css("display", "none");
+    $("#uutiset-link").attr("class", "active-link");
+    if ($(window).width() > 800)
+    {
+      $("#instr-logo").hide().delay(4000).fadeIn(500).delay(5000).fadeOut(500);
+    }
     $("#logo").click(function() 
     {
 			$("html, body").animate({scrollTop:0}, 'fast');
 			$("#top").slideToggle("fast");
+			$("#instr-logo").css("left", -50000);
 			return false;
+    });
+    $("#join").hover(function()
+    {
+      $("#instr-join").hide().delay(500).fadeIn(300);
+    }, function()
+    {
+      $("#instr-join").fadeOut(300);
+    });
+    $("#shirt").hover(function()
+    {
+      $("#instr-shirt").hide().delay(500).fadeIn(300);
+    }, function()
+    {
+      $("#instr-shirt").fadeOut(300);
     });
     $("#yhdistysasiat-link").click(function() 
     {
