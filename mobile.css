@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+  #logo {
+    width: 70%;
+    padding: 15%;
+    padding-bottom: 20px;
+  }
+  #content-wrapper {
+    width: 80%;
+    padding: 10%;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icon {
+    width: 10%;
+    height: auto;
+  }
+}

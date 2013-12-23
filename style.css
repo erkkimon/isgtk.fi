@@ -1,0 +1,182 @@
+/* FONTS */
+
+@font-face 
+{
+  font-family: "bebas-neue";
+  src: url("fonts/BebasNeue.otf"),
+       url("fonts/BebasNeue.svg"),
+       url("fonts/BebasNeue.ttf"),
+  		 url("fonts/BebasNeue.woff");
+}
+
+@font-face 
+{
+  font-family: "lin-libertine";
+  src: url("fonts/LinLibertine_PERUS.otf"),
+       url("fonts/LinLibertine_PERUS.svg"),
+       url("fonts/LinLibertine_PERUS.ttf"),
+  		 url("fonts/LinLibertine_PERUS.woff");
+}
+
+@font-face 
+{
+  font-family: "lin-libertine-bold";
+  src: url("fonts/LinLibertine_BOLD.otf"),
+       url("fonts/LinLibertine_BOLD.svg"),
+       url("fonts/LinLibertine_BOLD.ttf"),
+  		 url("fonts/LinLibertine_BOLD.woff");
+}
+
+@font-face 
+{
+  font-family: "lin-libertine-bold-italic";
+  src: url("fonts/LinLibertine_BOLDITALIC.otf"),
+       url("fonts/LinLibertine_BOLDITALIC.svg"),
+       url("fonts/LinLibertine_BOLDITALIC.ttf"),
+  		 url("fonts/LinLibertine_BOLDITALIC.woff");
+}
+
+@font-face 
+{
+  font-family: "lin-libertine-italic";
+  src: url("fonts/LinLibertine_ITALIC.otf"),
+       url("fonts/LinLibertine_ITALIC.svg"),
+       url("fonts/LinLibertine_ITALIC.ttf"),
+  		 url("fonts/LinLibertine_ITALIC.woff");
+}
+
+/* BASIC STRUCTURE */
+
+html {
+  height: 100%;
+}
+
+body {
+  background: gray;
+  text-align: center;
+  padding: 0px;
+  padding-bottom: 150px;
+  margin: 0px;
+  background: url('img/bg_white.jpg');
+}
+
+/* STRUCTURAL ELEMENTS */
+
+#top {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: url('img/bg_black.jpg');
+}
+
+#shadow {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#content {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+#top-wrapper {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+}
+
+#content-wrapper {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin: 0px;
+  opacity: 0.8;
+  background: url('img/bg_white.jpg');
+  -moz-box-shadow:     0px 0px 12px 2px #000;
+	-webkit-box-shadow:  0px 0px 12px 2px #000;
+	box-shadow:          0px 0px 12px 2px #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#000000');
+}
+
+/* TYPOGRAPHY */
+
+p {
+  font-family: "lin-libertine-italic";
+  line-height: 180%;
+  text-align: justify;
+}
+
+#top p {
+  color: #FFF;
+}
+
+#content p {
+  color: #000;
+}
+
+b {
+  font-family: "lin-libertine-bold-italic";
+}
+
+a, a:hover {
+  font-family: "lin-libertine-italic";
+  border-bottom: 1px dashed rgba(0,0,0,0);
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px dashed #000;
+}
+
+.active-link {
+  font-family: "lin-libertine-bold-italic";
+}
+
+/* CLASSES */
+
+.hr {
+  display: block;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding: 7px;
+  height: 60px;
+  border: 1px dashed rgba(0,0,0,0);
+  margin: 10px;
+}
+
+.icon:hover {
+  border: 1px dotted #000;
+}
+
+/* AD HOC STYLES */
+
+#signature {
+  display: block;
+}

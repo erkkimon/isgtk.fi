@@ -1,0 +1,5 @@
+White-tausta feidautuu vasemmalta, oikealta ja alhaalta väriin #e3e3e3. Ylhäältä ei feidaudu tasaiseen väriin.
+
+Tekstien värit:
+Tumma teksti #303030
+Vaalea teksti #e3e3e3

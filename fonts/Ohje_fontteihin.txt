@@ -1,0 +1,10 @@
+Leipätekstifontti LinLibertine_ITALIC
+Otsikot leipätekstissä LinLibertine_BOLD
+
+LinLibertine_PERUS, LinLibertine_BOLD on LinLibertinen fontteja, joita ei lähtökohtaisesti tarvi mihinkään, mutta hyvä ne on olla olemassa.
+
+BebasNeue on logofontti, jota ei sitäkään tarvinne mihinkään, mutta se on myös hyvä olla olemassa.
+
+Tekstien värit:
+Tumma teksti #303030
+Vaalea teksti #e3e3e3
